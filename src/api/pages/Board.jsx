@@ -94,7 +94,7 @@ function Board() {
           <hr />
 
           {boardList.map((post, index) => (
-            <li key={index}>
+            <ul key={index}>
               {post.name}: {post.text}
               <h3>댓글</h3>
               {commentList[post.id] &&
@@ -111,7 +111,7 @@ function Board() {
               <br />
               <br />
               <br />
-            </li>
+            </ul>
           ))}
         </ul>
       </div>
